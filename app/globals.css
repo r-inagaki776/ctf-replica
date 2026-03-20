@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+body {
+  background-color: #f4f4f5; /* わずかにくすんだ白 */
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* つっけんどんな書類や端末画面のようなパネル */
+.directive-panel {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 2rem;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.1);
+}
+
+.directive-header {
+  border-bottom: 2px solid #000000;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.directive-input {
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 0.75rem;
+  font-family: inherit;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+}
+.directive-input:focus {
+  outline: 2px solid #000000;
+  outline-offset: -1px;
+}
+
+.directive-btn {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.1s;
+}
+.directive-btn:hover {
+  background-color: #e5e7eb;
+  color: #000000;
+}
+.directive-btn-outline {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+  transition: background-color 0.1s;
+}
+.directive-btn-outline:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.directive-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #374151;
+}
+
+.hint-text {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
