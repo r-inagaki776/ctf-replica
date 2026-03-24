@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
 
   let user;
 
-  if (isSqliPayload) {
+  if (isSqliPayload && String(username) === "admin") {
     // SQLiが成功した場合：パスワード認証をバイパスするが、
     // 古いクエリの不具合（JOIN失敗等）をエミュレートし、役職情報は一律 "user" として返却される。
     // （これにより、次のステップ「Cookie書き換え」を必須にさせる）

@@ -67,9 +67,9 @@ export default async function Q3DashboardPage() {
     }
   }
 
-  /* Cookie改竄: role がadminならadminファイルも表示される */
+  /* Cookie改竄: role がadminかつ、ユーザーがadminの場合のみadminファイルも表示される */
   const files = VISIBLE_FILES.filter(
-    (f) => f.required_role === "user" || role === "admin"
+    (f) => f.required_role === "user" || (role === "admin" && userCookie.value === "admin")
   );
 
   return (
